@@ -58,9 +58,9 @@ function tick(delay) {
             // for (const player2 of players) {
             //     player.socket.emit('updateObject', player2.netData.id, player2.netData.position);
             // };
-            for (const object of deletedObjects) {
-                player.socket.emit('deleteObject', object.netData.id);
-            };
+            // for (const object of deletedObjects) {
+            //     player.socket.emit('deleteObject', object.netData.id);
+            // };
         };
 
         // Reset everything

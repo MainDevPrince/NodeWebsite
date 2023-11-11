@@ -52,15 +52,15 @@ function tick(delay) {
 
         // Send updates to client
         for (const player of players) {
-            // for (const object of newObjects) {
-            //     if (object !== player) player.socket.emit('newObject', object.netData);
-            // };
-            // for (const player2 of players) {
-            //     player.socket.emit('updateObject', player2.netData.id, player2.netData.position);
-            // };
-            // for (const object of deletedObjects) {
-            //     player.socket.emit('deleteObject', object.netData.id);
-            // };
+            for (const object of newObjects) {
+                if (object !== player) player.socket.emit('newObject', object.netData);
+            };
+            for (const player2 of players) {
+                player.socket.emit('updateObject', player2.netData.id, player2.netData.position);
+            };
+            for (const object of deletedObjects) {
+                player.socket.emit('deleteObject', object.netData.id);
+            };
         };
 
         // Reset everything

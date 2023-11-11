@@ -23,7 +23,7 @@ module.exports = {
     world, players, objects, newObjects, deletedObjects, getNextObjectID
 };
 
-// objects.add(new Obstacle(1, Vec2(7, 4)));
+objects.add(new Obstacle(1, Vec2(7, 4)));
 objects.add(new Obstacle(2, Vec2(4, 7)));
 objects.add(new Obstacle(1, Vec2(10, 15)));
 objects.add(new Obstacle(2, Vec2(6, 18)));
